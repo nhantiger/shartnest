@@ -8,7 +8,7 @@ function ButtonProductType() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay:3000,
+    autoplay:5000,
     responsive: [
       {
         breakpoint: 1024,

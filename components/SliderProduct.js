@@ -2,6 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaArrowCircleRight,FaUserCircle } from "react-icons/fa";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import Rating from "react-rating";
+
 
 function SliderProduct() {
   const settings = {
@@ -35,7 +39,9 @@ function SliderProduct() {
 
   return (
     <div className="slider-container">
-      <h1 className="slider-title">Các sản phẩm nổi bậc:</h1>
+      <h1 className="slider-title flex">
+        Các sản phẩm nổi bậc <FaArrowCircleRight className=" m-2 mt-3" />
+      </h1>{" "}
       <Slider {...settings}>
         <div className="slider-item">
           <div className="slider-item-content mx-4 p-2 border rounded-lg border-[#00483d] border-r-4 border-b-4 ">
@@ -45,9 +51,16 @@ function SliderProduct() {
               alt="Product 1"
             />
             <h3>Chảo Từ Chống Dính ELO Duco 32cm</h3>
-            <p>Giá cả và điều kiện cho thuê.</p>
-            <p>Thông tin người cho thuê.</p>
-          
+            <Rating
+              initialRating={4}
+              readonly
+              emptySymbol={<AiOutlineStar className="text-yellow-500" />}
+              fullSymbol={<AiFillStar className="text-yellow-500" />}
+            />
+            <div className="flex items-center">
+              <FaUserCircle className="mb-2"/>
+              <p className="ml-2">Nhân Ngô</p>
+            </div>
             <button>Liên hệ</button>
           </div>
         </div>
@@ -59,8 +72,16 @@ function SliderProduct() {
               alt="Product 2"
             />
             <h3>Chén Xứ Men Hoa Trùng Khánh</h3>
-            <p>Giá cả và điều kiện cho thuê.</p>
-            <p>Thông tin người cho thuê.</p>
+            <Rating
+              initialRating={4}
+              readonly
+              emptySymbol={<AiOutlineStar className="text-yellow-500" />}
+              fullSymbol={<AiFillStar className="text-yellow-500" />}
+            />
+            <div className="flex items-center">
+              <FaUserCircle className="mb-2"/>
+              <p className="ml-2">Nhân Ngô</p>
+            </div>
             <button>Liên hệ</button>
           </div>
         </div>
@@ -71,8 +92,16 @@ function SliderProduct() {
               alt="Product 3"
             />
             <h3>Nồi inox ELo Kallisto 24cm cao cấp</h3>
-            <p>Giá cả và điều kiện cho thuê.</p>
-            <p>Thông tin người cho thuê.</p>
+            <Rating
+              initialRating={4}
+              readonly
+              emptySymbol={<AiOutlineStar className="text-yellow-500" />}
+              fullSymbol={<AiFillStar className="text-yellow-500" />}
+            />
+            <div className="flex items-center">
+              <FaUserCircle className="mb-2"/>
+              <p className="ml-2">Nhân Ngô</p>
+            </div>
             <button>Liên hệ</button>
           </div>
         </div>
@@ -83,8 +112,16 @@ function SliderProduct() {
               alt="Product 4"
             />
             <h3>Chảo vân đá đáy từ Nagakawa NAG2206</h3>
-            <p>Giá cả và điều kiện cho thuê.</p>
-            <p>Thông tin người cho thuê</p>
+            <Rating
+              initialRating={4}
+              readonly
+              emptySymbol={<AiOutlineStar className="text-yellow-500" />}
+              fullSymbol={<AiFillStar className="text-yellow-500" />}
+            />
+            <div className="flex items-center">
+              <FaUserCircle className="mb-2"/>
+              <p className="ml-2">Nhân Ngô</p>
+            </div>
             <button>Liên hệ</button>
           </div>
         </div>
@@ -95,8 +132,16 @@ function SliderProduct() {
               alt="Đĩa sâu lòng Imari 19 cm"
             />
             <h3>ĐĨA SỨ HÌNH OVAL MÀU BE / L SIZE L 22CM | MUJI</h3>
-            <p>Giá cả và điều kiện cho thuê.</p>
-            <p>Thông tin người cho thuê.</p>
+            <Rating
+              initialRating={4}
+              readonly
+              emptySymbol={<AiOutlineStar className="text-yellow-500" />}
+              fullSymbol={<AiFillStar className="text-yellow-500" />}
+            />
+            <div className="flex items-center">
+              <FaUserCircle className="mb-2"/>
+              <p className="ml-2">Nhân Ngô</p>
+            </div>
             <button>Liên hệ</button>
           </div>
         </div>
@@ -107,11 +152,19 @@ function SliderProduct() {
               alt="Product 6"
             />
             <h3>Chảo chống dính Double Germany 668 30cm </h3>
-            <p>Giá cả và điều kiện cho thuê.</p>
-            <p>Thông tin người cho thuê.</p>
+            <Rating
+              initialRating={4}
+              readonly
+              emptySymbol={<AiOutlineStar className="text-yellow-500" />}
+              fullSymbol={<AiFillStar className="text-yellow-500" />}
+            />
+            <div className="flex items-center">
+              <FaUserCircle className="mb-2"/>
+              <p className="ml-2">Nhân Ngô</p>
+            </div>
             <button>Liên hệ</button>
           </div>
-        </div>
+        </div>{" "}
       </Slider>
     </div>
   );
